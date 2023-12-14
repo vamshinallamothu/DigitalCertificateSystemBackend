@@ -8,8 +8,7 @@ The DigitalCertificateSystemBackend repository presents a comprehensive Blockcha
 ## Technology Stack
 
 1) NodeJS
-  
 2) MongoDB
-
-3) IPFS (InterPlanetary File System)
+3) Ethereum Blockchain
+4) IPFS (InterPlanetary File System)
 
