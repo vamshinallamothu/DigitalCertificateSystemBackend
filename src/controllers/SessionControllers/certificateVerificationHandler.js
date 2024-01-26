@@ -20,6 +20,7 @@ const certificateVerificationHandler = async (req, res) => {
             // If user found: resulting wallet address and listOfCertificatesMetaData
             if (user){
                 const {walletAddress} = user;
+                // * Getting List of Certificates MetaData 
                 const listOfCertificatesMetaData = await generateListOfCertificatesMetaData(walletAddress);
                 return res.json({listOfCertificatesMetaData});
             }

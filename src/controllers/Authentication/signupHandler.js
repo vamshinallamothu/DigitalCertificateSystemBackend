@@ -18,7 +18,6 @@ const signupHandler = async (req, res) => {
 
         const user = await getUser({username}); // Checking if a user Exists aldready
         if (user){
-
             // Sending a status code of 409 along with an error
             return res.status(409).json({
                 error : "Username already exists"

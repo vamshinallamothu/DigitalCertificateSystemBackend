@@ -8,6 +8,8 @@ const createUserHandler = async (req, res) => {
     // Destructuring the user details from request body
     const {username, password, fullName, aadharNumber} = req.body;
 
+        // TODO: Add Validators for username, password, aadhar card
+
     // Checking whether all details are provided
     if (!(username && password && fullName && aadharNumber)){
         return res.status(400).json({

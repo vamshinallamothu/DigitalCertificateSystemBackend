@@ -1,7 +1,7 @@
 // Importing the required modules
-const express = require("express");
-const cors = require("cors");
-const bodyParser = require("body-parser");
+const express = require("express"); // * For Handling Http Requests
+const cors = require("cors"); // * Cross Origin
+const bodyParser = require("body-parser"); // * Body Parsing 
 
 // Importing the routers
 const indexRouter = require("./routes/index");

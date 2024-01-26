@@ -10,7 +10,6 @@ require("dotenv").config();
 // Defining an async function to get metadata of NFTs owned by an user
 const getUserNFTsMetaData = async (walletAddress) => {
     try{
-
         // Creating a smart contarct instance
         const contract = await getContractInstance();
 

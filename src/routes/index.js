@@ -20,7 +20,7 @@ router.get("/", (req, res) => {
 })
 
 
-// Handling all the GET and POST routes
+//* Handling all the GET and POST routes
 router.post("/login", loginHandler);
 
 router.post("/signup", signupHandler);

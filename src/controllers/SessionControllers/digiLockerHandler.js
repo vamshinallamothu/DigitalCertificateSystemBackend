@@ -8,7 +8,7 @@ const digiLockerHandler = async (req, res) => {
         const {username} = req.body.jwTokenData;
         const {walletAddress} = await User.findOne({username});
         const listOfCertificatesMetaData = await generateListOfCertificatesMetaData(walletAddress);
-        res.json({listOfCertificatesMetaData});
+        res.json({listOfCertificatesMetaData});d
     } catch(err){
         console.error("Error in DigiLockerHandler", err);
         return res.status(500).json({

@@ -16,6 +16,8 @@ const createOrganizationUserHandler = async (req, res) => {
     }
     try{
 
+        // TODO: Add Validators for username, password
+
         // Generating cryptographic keys and addresses
         const {privateKey, publicKey, walletAddress} = getRandomKeysAndAddresses();
 
